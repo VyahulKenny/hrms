@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    padding:0;
+    background-image: url('../pf/img/bk/StKitts-Bk1(darkblur).jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size:cover;
+    height:100%;
+    font-size: 18px;
+    width:100%;
+    min-width: 790px;
+}
+.row{
+    width:100%;
+}
+.row::after{
+    clear:both;
+    content:""; 
+    display: block;
+}
+div{
+    box-sizing:border-box;
+    display:block;
+    margin: auto;
+}
+[class*="col"]{
+    float:left;
+    }
+#header{width:100%;
+    height:6rem;
+}
+#footer{width:100%;
+    background-color:black;
+    color:white;
+    display:block;
+    position: fixed;
+    height:4rem;
+    bottom: 0;}
+#bd{width:95%;
+    min-height:100%;
+    margin:auto;
+    opacity:1;
+    background-color:white;}
+.col0{width:925px;
+    float:none;}
+.col1{width:100%;}
+.col2{width:20%;}
+.col3{width:80%;
+    float:none;}
+.col4{width:80%;}
+.col5{width:10%;}
+.col6{width:60%;}
+.col7{width:auto;
+    float:none;}
+.colsp{width:425px;
+    height:287px;
+    padding:5px;
+    background-color: grey;}
+.colsp2{width:500px;
+    height:287px;
+    padding:5px;
+    background-color: grey;
+    }
+  
+#menu{
+    width:100%;
+    margin: 0;
+    list-style-type: none;
+    background-color: black;
+    color:red;
+    border-bottom: 2px red solid;
+    border-top:2px red solid;
+    float:left;
+    padding: 0;
+}
+#menu li{
+    display:block;
+    float:left;
+    padding:5px 15px;
+    margin:0;
+     cursor:default;
+}
+#menu li a{
+    text-decoration: none;
+    color:inherit;
+}
+#menu #lgout{
+    float:right;
+   
+}
+#menu li:hover{
+    background-color:red;
+    color:black;
+}
+
+
+img{
+    height:inherit;
+    width:100%;
+}

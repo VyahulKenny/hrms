@@ -1,0 +1,44 @@
+#ss{
+    margin-top: 40px;
+}
+#epop{
+    width:80%;
+    background-color:black;
+    font-size: 16px;
+    color:white;
+    position: absolute;
+    display: none;
+    height:75px;
+    float:none;
+    margin: auto auto;
+    border: 1px solid red;
+}
+
+#epop button,#epop input[type="submit"],#epop input[type="reset"],.butt{
+    float:right;
+    border:1px solid red;
+    background-color: black;
+    padding: 3px 6px;
+    margin:3px 1px;
+    color:red;
+    position: relative;
+    text-decoration: none;
+}
+#epop button,#epop input[type="submit"],#epop input[type="reset"],.butt{
+   
+}
+#epop button:hover,#epop input[type="submit"]:hover,#epop input[type="reset"]:hover,.butt:hover{
+    background-color: red;
+    border:1px solid black;
+    color:black;
+}
+#hdid{
+    display: none;
+}
+.col3{
+    background-color: #ebe2ac;
+}
+#up{
+    background-color: black;
+    color:white;
+}
