@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="st/ss.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="st/lgsu.css">
+        <style>
+            .col7{
+                width:auto;
+                height:440px;
+                margin: auto auto;
+                text-align: center;
+            }
+            video{
+                width:auto;
+                height:inherit;
+            }
+            .col2 img{
+                width:350px;
+                height:210px
+                
+            }
+            
+        </style>
+        <script>
+        function signin()
+            {
+                window.location.href ="login.html";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="row">
+                <div id="header"><img src="pf/img/bn/banner1.png"></div>
+        </div>
+        <div class="col1"><!--menubar-->
+            <ul id="menu">
+                <li><a>Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li id="lgout" onclick="signin()">Sign In</li>
+            </ul>
+        </div><br><br>
+            <div class="row">
+              <div class="col7">    
+                        <video autoplay  muted loop>
+                            <source src="pf/vid/wel/1.mp4" type="video/mp4">
+                        </video>
+                </div>
+        </div>
+
+            <div id="footer">
+            Footer
+            </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" href="st/ss.css" rel="stylesheet" media="screen">
+        <style>
+            #ss{
+                margin-top: 40px;
+            }
+        
+        </style>
+        <script>
+            function showv(dep,dt,fname,lname,pos,sal,since,sf,sl,spos)
+            {
+                var add="v/v.php?"
+                if(dep)
+                    add+=("dep="+dep+"&");
+                var xmlhttp=new XMLHttpRequest();
+                xmlhttp.onreadystatechange=function()
+                {
+                    if (this.readyState==4 && this.status==200)
+                        {
+                            document.getElementById("ss").innerHTML=this.responseText; 
+                        }
+                    
+                };
+                xmlhttp.open("GET",add,true);
+                xmlhttp.send();
+                
+            }
+        </script>
+    </head>
+    <body onload="showv()">
+        <div class="row">
+                <div id="header"><img src="pf/img/bn/banner1.png"></div>
+        </div>
+        <div class="col1"><!--menubar-->
+            <ul id="menu">
+                <li>Home</li>
+                <li id="lgout">Sign Out</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col3" id="ss">
+                
+            </div>
+        
+        </div>
+    </body>
+
+</html>

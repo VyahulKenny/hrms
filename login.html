@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="st/ss.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="st/lgsu.css">
+        <style>
+            #lgcol{
+                margin:auto;
+                width:300px;
+                height:339px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: table;
+            }
+            #lgcol div{
+               margin: auto;
+                text-align: center;
+                vertical-align: middle;
+                display:table-cell;
+            }
+
+            #lgcol img{
+                position:absolute;
+                width:300px;
+                height:339px;
+                z-index: -1;
+                margin: 0;
+                padding:0;
+                opacity: 0.65;
+
+            }
+            #lgcol div form span{
+                font-size: 28px;
+                font-weight: 600;
+                color:white;
+            }
+            #lgcol div form button,#su{
+                margin:0 0 8px 0;
+            }
+            
+            #su{
+                width:100%;
+            }
+            
+        </style>
+        <script>
+        function cancel()
+            {
+                window.location.href ="home.html";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="row">
+                <div id="header"><img src="pf/img/bn/banner1.png"></div>
+            </div>
+        <div class="col1"><!--menubar-->
+            <ul id="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+
+            </ul>
+        </div>
+            <div id="lgcol">
+                <img src="pf/img/lg/300px-Coat_of_arms_of_Saint_Kitts_and_Nevis_(variant).svg.png">
+                <div>
+                    <form method="post" action="ph/login.php">
+                        <span>Username:</span><br><input type="text" name="Uname" required autofocus><br>
+                        <span>Password:</span><br><input type="password" name="Pass" required><br>
+                        <button type="submit"  name="Sub" value="1">Submit</button>
+                        <button type="reset">Reset</button><br>
+                        <a class="su" href="signup.html">Sign Up NOW</a>
+
+                    </form>
+                </div>
+        </div>
+        <div id="footer">
+            Footer
+        </div>
+    </body>
+</html>
